@@ -63,4 +63,5 @@ loguru_lib = library(
 loguru_dep = declare_dependency(
   include_directories: include_directories('.'),
   link_with: loguru_lib,
+  compile_args: flags,
 )
